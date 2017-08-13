@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<BarEntry> entries = new ArrayList<>();
         entries.add(new BarEntry(8, 9));
-        entries.add(new BarEntry(0, 1));
+        entries.add(new BarEntry(0, -1));
 //        entries.add(new BarEntry(0, 2));
 //        entries.add(new BarEntry(0, 3));
 //        entries.add(new BarEntry(0, 4));
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         BarData data = new BarData(labels, bardataset);
         barChart.setData(data); // set the data and list of lables into chart
         barChart.setClickable(false);
-        barChart.setX(10);
+//        barChart.setX(10);
         barChart.setDescription("Set Bar Chart Description");  // set the description
         int[] color={
             Color.GREEN,Color.YELLOW
