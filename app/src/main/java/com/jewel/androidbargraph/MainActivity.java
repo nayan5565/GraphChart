@@ -1,7 +1,6 @@
 package com.jewel.androidbargraph;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -22,29 +21,37 @@ public class MainActivity extends AppCompatActivity {
         BarChart barChart = (BarChart) findViewById(R.id.barchart);
 
         ArrayList<BarEntry> entries = new ArrayList<>();
-        entries.add(new BarEntry(8f, 0));
-        entries.add(new BarEntry(2f, 1));
-        entries.add(new BarEntry(5f, 2));
-        entries.add(new BarEntry(20f, 3));
-        entries.add(new BarEntry(15f, 4));
-        entries.add(new BarEntry(19f, 5));
+        entries.add(new BarEntry(8, 9));
+        entries.add(new BarEntry(0, 1));
+//        entries.add(new BarEntry(0, 2));
+//        entries.add(new BarEntry(0, 3));
+//        entries.add(new BarEntry(0, 4));
+//        entries.add(new BarEntry(0, 5));
+//        entries.add(new BarEntry(0, 6));
 
         BarDataSet bardataset = new BarDataSet(entries, "Cells");
 
         ArrayList<String> labels = new ArrayList<String>();
-        labels.add("2016");
-        labels.add("2015");
-        labels.add("2014");
-        labels.add("2013");
-        labels.add("2012");
-        labels.add("2011");
+        labels.add("0");
+        labels.add("1");
+        labels.add("2");
+        labels.add("3");
+        labels.add("4");
+        labels.add("5");
+        labels.add("6");
+        labels.add("7");
+        labels.add("8");
+        labels.add("9");
 
         BarData data = new BarData(labels, bardataset);
         barChart.setData(data); // set the data and list of lables into chart
-
+        barChart.setClickable(false);
+        barChart.setX(10);
         barChart.setDescription("Set Bar Chart Description");  // set the description
-
-        bardataset.setColors(ColorTemplate.COLORFUL_COLORS);
+        int[] color={
+            Color.GREEN,Color.YELLOW
+        };
+        bardataset.setColors(color);
 
         barChart.animateY(5000);
 
