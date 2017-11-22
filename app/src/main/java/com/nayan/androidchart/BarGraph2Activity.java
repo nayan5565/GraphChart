@@ -1,8 +1,10 @@
-package com.jewel.androidbargraph;
+package com.nayan.androidchart;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import com.nayan.androidchart.R;
 
 import org.eazegraph.lib.charts.BarChart;
 import org.eazegraph.lib.models.BarModel;

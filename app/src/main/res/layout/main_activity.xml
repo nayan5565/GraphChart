@@ -17,4 +17,22 @@
         android:layout_height="wrap_content"
         android:text="PiChart" />
 
+    <Button
+        android:id="@+id/btnArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AreaChart" />
+
+    <Button
+        android:id="@+id/btnLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LineChart" />
+
+    <Button
+        android:id="@+id/btnMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MultiLineChart" />
+
 </LinearLayout>
